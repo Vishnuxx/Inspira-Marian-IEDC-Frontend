@@ -1,10 +1,12 @@
 import Navbar from "../../Components/Navbar/Navbar";
+import TopGradient from "../../Components/TopGradientBg/TopGradientBg";
 import style from "./landingpage.module.css";
 
 function LandingPage() {
   return (
     <section className={style.landingpage}>
-      <Navbar>dfd</Navbar>
+      <TopGradient></TopGradient>
+      <Navbar></Navbar>
     </section>
   );
 }

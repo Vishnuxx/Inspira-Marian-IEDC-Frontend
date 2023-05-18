@@ -1,20 +1,21 @@
 import HighlightButton from "../Highlightbutton/HighlightButton";
 import Logo from "../Logo/Logo";
 import globalstyle from "../../styles/globals.module.css";
+import style from "./navbar.module.css";
 
 function NavbarDesktop() {
   return (
-    <div className={globalstyle.menubar}>
+    <div className={style.navigation}>
       <Logo></Logo>
-      <div className={globalstyle.menulist}>
-        <p className={globalstyle.menuItem}>Home</p>
-        <p className={globalstyle.menuItem}>About</p>
-        <p className={globalstyle.menuItem}>News</p>
-        <p className={globalstyle.menuItem}>Events</p>
-        <p className={globalstyle.menuItem}>Learn</p>
+      <div className={style.menulist}>
+        <p className={style.menuItem}>Home</p>
+        <p className={style.menuItem}>About</p>
+        <p className={style.menuItem}>News</p>
+        <p className={style.menuItem}>Events</p>
+        <p className={style.menuItem}>Learn</p>
       </div>
       <div>
-        <HighlightButton fill>Build A Startup</HighlightButton>
+        <HighlightButton fill>Build a Startup</HighlightButton>
       </div>
     </div>
   );

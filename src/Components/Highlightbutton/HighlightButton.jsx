@@ -1,8 +1,10 @@
 import globalstyle from "../../styles/globals.module.css";
+import style from "./highlightbutton.module.css";
+
 
 function HighlightButton({ fill, children }) {
   return (
-    <button className={globalstyle.highlightbutton}>
+    <button className={style.highlightbutton}>
       <p>{children}</p>
     </button>
   );

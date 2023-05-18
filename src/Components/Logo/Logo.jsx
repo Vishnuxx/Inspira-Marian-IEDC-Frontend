@@ -1,8 +1,9 @@
 import globalstyle from "../../styles/globals.module.css";
+import style from "./logo.module.css";
 
 function Logo(props) {
   return (
-    <div className={globalstyle.logo}>
+    <div className={style.logo}>
       <svg
         width="50"
         height="50"
