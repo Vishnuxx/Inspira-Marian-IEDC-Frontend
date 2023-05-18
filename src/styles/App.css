@@ -1,3 +1,14 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+#root {
+  text-align: center;
+  height: inherit;
+  width: inherit;
+}
+
 .App {
   text-align: center;
+  height: inherit;
+  width: inherit;
+  font-family: 'Poppins' , sans-serif;
 }
