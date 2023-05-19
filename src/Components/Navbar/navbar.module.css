@@ -9,6 +9,22 @@
   padding: 40px 30px 0px 30px;
   box-sizing: border-box;
   top: 0;
+  animation-duration: 2s;
+    animation-name: fadein;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes fadein {
+  0%   {
+   opacity: 0;
+   }
+
+   50% {
+   opacity: 0;
+   }
+  100% {
+     opacity: 1;
+    }
 }
 
 .logobar {
@@ -29,7 +45,7 @@
   animation-name: example;
   animation-duration: 0.3s;
   animation-timing-function: ease-out;
-  z-index: 2;
+  z-index: 3;
   box-shadow: 0px 0px 10px 0px rgb(205, 205, 205);
 }
 

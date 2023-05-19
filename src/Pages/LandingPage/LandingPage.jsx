@@ -2,6 +2,7 @@ import HighlightButton from "../../Components/Highlightbutton/HighlightButton";
 import Logo from "../../Components/Logo/Logo";
 import Navbar from "../../Components/Navbar/Navbar";
 import TopGradient from "../../Components/TopGradientBg/TopGradientBg";
+import BulbGradient from "../../Icons/BulbGradient";
 import style from "./landingpage.module.css";
 
 function LandingPage() {
@@ -9,18 +10,21 @@ function LandingPage() {
     <section className={style.landingpage}>
       <TopGradient></TopGradient>
       <Navbar></Navbar>
-      <div
-        className={style.maincontent}
-      >
-        <Logo
-          withLabel={false}
-          logoStyle={{
-            width: "120px",
-            height: "120px",
-            position: "relative",
-            top: "30px",
-          }}
-        ></Logo>
+      <BulbGradient className={style.bulbBgL}></BulbGradient>
+      <BulbGradient className={style.bulbBgR}></BulbGradient>
+      <div className={style.maincontent}>
+        <div className={style.logocontent}>
+          <Logo
+            withLabel={false}
+            logoStyle={{
+              width: "120px",
+              height: "120px",
+              position: "relative",
+              top: "30px",
+            }}
+          ></Logo>
+        </div>
+
         <h1 className={style.heading}>Inspira</h1>
         <p className={style.subtitle}>MARIAN IEDC</p>
         <p className={style.description}>
@@ -31,7 +35,6 @@ function LandingPage() {
         <div className={style.actionbuttoncontainer}>
           <button className={style.explorebtn}>Explore</button>
           <HighlightButton>Build a Startup</HighlightButton>
-          
         </div>
       </div>
     </section>

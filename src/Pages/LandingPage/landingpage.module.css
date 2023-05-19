@@ -1,27 +1,114 @@
 .landingpage {
   width: 100vw;
-  min-height: 100%;
+  height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.bulbBgL {
+  height: 50vh;
+  width: 50vh;
+  position: absolute;
+  left: -25vh;
+ 
+  transform: rotate(10deg) ;
+  animation-name: translatefromleft;
+animation-duration: 1s;
+
+  animation-timing-function: ease-out;
+}
+
+.bulbBgR {
+  height: 50vh;
+  width: 50vh;
+  position: absolute;
+  right: -25vh;
+  transform: rotate(-10deg) ;
+ 
+  animation-name: translatefromright;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes translatefromleft {
+  0%   {
+    display: none;
+    transform: rotate(0) scale(0.1) ;
+    left: -100vh; opacity: 0;}
+  100% {
+    display:block;
+    transform: rotate(10deg) scale(1) ;
+    left:-25vh; opacity: 1;}
+}
+
+@keyframes translatefromright {
+  0%   {
+    display: none;
+    transform: rotate(0) scale(0.1) ;
+    transform: rotate(0) scale(0.1);
+    right: -100vh; opacity: 0;}
+  100% {
+    display:block;
+    transform: rotate(-10deg) scale(1);
+    right:-25vh; opacity: 1;}
 }
 
 .maincontent {
   /* width: 100%; */
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 
+.logocontent {
+  position: relative;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes fadein {
+  50%   {
+    opacity: 0;
+   }
+  100% {
+    opacity: 1;
+
+    }
+}
+
 .heading {
   width: 100%;
-  font-size: 110px;
+  font-size: 10rem;
   margin: 0px;
   padding: 0;
   font-weight: 600;
+   animation-name: zoomOut;
+  animation-duration: 0.9s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  white-space: nowrap;
+}
+
+
+@keyframes zoomOut {
+  0%   {
+   
+    transform: scale(10) ;
+   }
+   30%{
+
+   }
+  100% {
+
+    transform: scale(1) ;
+
+    }
 }
 
 .subtitle {
@@ -34,19 +121,61 @@
   position: relative;
   top: -10px;
   margin-bottom: 10px;
+   animation-name: contract;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  white-space: nowrap; overflow: scroll;
+}
+
+@keyframes contract {
+  0%   {
+   opacity: 0;
+   }
+
+   70% {
+     opacity: 0;
+   letter-spacing: 50px;
+   }
+  100% {
+     opacity: 1;
+    letter-spacing: 10px;
+
+    }
 }
 
 .description {
   width: 60vw;
-
   margin-bottom: 40px;
   font-size: 22px;
+ animation-duration: 2.5s;
+    animation-name: fadein;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
 }
+
+@keyframes fadein {
+  0%   {
+   opacity: 0;
+   }
+
+   50% {
+   opacity: 0;
+   }
+  100% {
+     opacity: 1;
+
+
+    }
+}
+
 
 .actionbuttoncontainer {
   width: 500px;
   display: flex;
   justify-content: space-around;
+  animation-duration: 2.9s;
+    animation-name: fadein;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .explorebtn {
@@ -60,6 +189,14 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
+  .bulbBgL {
+    display: none;
+  }
+
+  .bulbBgR {
+    display: none;
+  }
+
   .heading {
     /* width: 100%; */
     font-size: 79px;
@@ -87,6 +224,13 @@
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 720px) {
+    .bulbBgL {
+    display: none;
+  }
+
+  .bulbBgR {
+    display: none;
+  }
   .heading {
     /* width: 100%; */
     font-size: 89px;
@@ -111,6 +255,29 @@
     align-items: center;
     justify-content: space-around;
   }
+}
+
+
+@media (min-width: 720px) and (max-width: 1030px) {
+  .bulbBgL{
+height: 30vh;
+  width: 30vh;
+  left: -15vh;
+  top:20vh;
+  
+  }
+
+  .bulbBgR {
+height: 30vh;
+  width: 30vh;
+  right: -15vh;
+  top:20vh;
+  
+  }
+}
+
+@media (max-height: 720px) and (max-width: 1030px) {
+
 }
 
 /* Media Query for Tablets Ipads portrait mode */
