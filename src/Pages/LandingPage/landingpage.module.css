@@ -147,7 +147,7 @@
   width: 60vw;
   margin-bottom: 40px;
   font-size: 22px;
-  animation-duration: 2.5s;
+  animation-duration: 2s;
   animation-name: fadein;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -169,7 +169,7 @@
   width: 500px;
   display: flex;
   justify-content: space-around;
-  animation-duration: 2.9s;
+  animation-duration: 2.5s;
   animation-name: fadein;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

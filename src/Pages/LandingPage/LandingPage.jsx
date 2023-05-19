@@ -6,6 +6,7 @@ import BulbGradient from "../../Icons/BulbGradient";
 import style from "./landingpage.module.css";
 
 import bottomillustration from "../../assets/imgs/bottomillus.png";
+import ActivitiesSection from "./Sections/ActivitiesSection/ActivitiesSection";
 
 
 function LandingPage() {
@@ -43,6 +44,8 @@ function LandingPage() {
         </div>
         <img className={style.bottomillus} src={bottomillustration} alt="" />
       </section>
+
+      <ActivitiesSection></ActivitiesSection>
     </main>
   );
 }
