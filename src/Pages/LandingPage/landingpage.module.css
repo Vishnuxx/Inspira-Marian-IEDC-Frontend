@@ -15,11 +15,9 @@
   width: 50vh;
   position: absolute;
   left: -25vh;
- 
-  transform: rotate(10deg) ;
+  transform: rotate(10deg);
   animation-name: translatefromleft;
-animation-duration: 1s;
-
+  animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 
@@ -28,34 +26,42 @@ animation-duration: 1s;
   width: 50vh;
   position: absolute;
   right: -25vh;
-  transform: rotate(-10deg) ;
- 
+  transform: rotate(-10deg);
+
   animation-name: translatefromright;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 
 @keyframes translatefromleft {
-  0%   {
+  0% {
     display: none;
-    transform: rotate(0) scale(0.1) ;
-    left: -100vh; opacity: 0;}
+    transform: rotate(0) scale(0.1);
+    left: -100vh;
+    opacity: 0;
+  }
   100% {
-    display:block;
-    transform: rotate(10deg) scale(1) ;
-    left:-25vh; opacity: 1;}
+    display: block;
+    transform: rotate(10deg) scale(1);
+    left: -25vh;
+    opacity: 1;
+  }
 }
 
 @keyframes translatefromright {
-  0%   {
+  0% {
     display: none;
-    transform: rotate(0) scale(0.1) ;
     transform: rotate(0) scale(0.1);
-    right: -100vh; opacity: 0;}
+    transform: rotate(0) scale(0.1);
+    right: -100vh;
+    opacity: 0;
+  }
   100% {
-    display:block;
+    display: block;
     transform: rotate(-10deg) scale(1);
-    right:-25vh; opacity: 1;}
+    right: -25vh;
+    opacity: 1;
+  }
 }
 
 .maincontent {
@@ -74,13 +80,12 @@ animation-duration: 1s;
 }
 
 @keyframes fadein {
-  50%   {
+  50% {
     opacity: 0;
-   }
+  }
   100% {
     opacity: 1;
-
-    }
+  }
 }
 
 .heading {
@@ -89,26 +94,21 @@ animation-duration: 1s;
   margin: 0px;
   padding: 0;
   font-weight: 600;
-   animation-name: zoomOut;
+  animation-name: zoomOut;
   animation-duration: 0.9s;
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   white-space: nowrap;
 }
 
-
 @keyframes zoomOut {
-  0%   {
-   
-    transform: scale(10) ;
-   }
-   30%{
-
-   }
+  0% {
+    transform: scale(10);
+  }
+  30% {
+  }
   100% {
-
-    transform: scale(1) ;
-
-    }
+    transform: scale(1);
+  }
 }
 
 .subtitle {
@@ -121,60 +121,56 @@ animation-duration: 1s;
   position: relative;
   top: -10px;
   margin-bottom: 10px;
-   animation-name: contract;
+  animation-name: contract;
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  white-space: nowrap; overflow: scroll;
+  white-space: nowrap;
+  overflow: scroll;
 }
 
 @keyframes contract {
-  0%   {
-   opacity: 0;
-   }
+  0% {
+    opacity: 0;
+  }
 
-   70% {
-     opacity: 0;
-   letter-spacing: 50px;
-   }
+  70% {
+    opacity: 0;
+    letter-spacing: 50px;
+  }
   100% {
-     opacity: 1;
+    opacity: 1;
     letter-spacing: 10px;
-
-    }
+  }
 }
 
 .description {
   width: 60vw;
   margin-bottom: 40px;
   font-size: 22px;
- animation-duration: 2.5s;
-    animation-name: fadein;
+  animation-duration: 2.5s;
+  animation-name: fadein;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
 }
 
 @keyframes fadein {
-  0%   {
-   opacity: 0;
-   }
+  0% {
+    opacity: 0;
+  }
 
-   50% {
-   opacity: 0;
-   }
+  50% {
+    opacity: 0;
+  }
   100% {
-     opacity: 1;
-
-
-    }
+    opacity: 1;
+  }
 }
-
 
 .actionbuttoncontainer {
   width: 500px;
   display: flex;
   justify-content: space-around;
   animation-duration: 2.9s;
-    animation-name: fadein;
+  animation-name: fadein;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -185,6 +181,15 @@ animation-duration: 1s;
   color: white;
   min-width: 200px;
   padding: 13px;
+}
+
+.bottomillus {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  animation-duration: 1s;
+  animation-name: fadein;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* Media Query for Mobile Devices */
@@ -220,11 +225,15 @@ animation-duration: 1s;
     align-items: center;
     justify-content: space-around;
   }
+
+  .bottomillus {
+    width: 90%;
+  }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 720px) {
-    .bulbBgL {
+  .bulbBgL {
     display: none;
   }
 
@@ -255,29 +264,31 @@ animation-duration: 1s;
     align-items: center;
     justify-content: space-around;
   }
+  .bottomillus {
+    width: 80%;
+  }
 }
 
-
 @media (min-width: 720px) and (max-width: 1030px) {
-  .bulbBgL{
-height: 30vh;
-  width: 30vh;
-  left: -15vh;
-  top:20vh;
-  
+  .bulbBgL {
+    height: 30vh;
+    width: 30vh;
+    left: -15vh;
+    top: 20vh;
   }
 
   .bulbBgR {
-height: 30vh;
-  width: 30vh;
-  right: -15vh;
-  top:20vh;
-  
+    height: 30vh;
+    width: 30vh;
+    right: -15vh;
+    top: 20vh;
+  }
+  .bottomillus {
+    width: 90%;
   }
 }
 
 @media (max-height: 720px) and (max-width: 1030px) {
-
 }
 
 /* Media Query for Tablets Ipads portrait mode */
