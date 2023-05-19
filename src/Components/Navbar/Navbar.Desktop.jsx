@@ -6,7 +6,7 @@ import style from "./navbar.module.css";
 function NavbarDesktop() {
   return (
     <div className={style.navigation}>
-      <Logo></Logo>
+      <Logo style={{width:'200px' , display:"flex" }}></Logo>
       <div className={style.menulist}>
         <p className={style.menuItem}>Home</p>
         <p className={style.menuItem}>About</p>

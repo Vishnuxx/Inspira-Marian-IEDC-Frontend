@@ -4,6 +4,8 @@
   text-align: center;
   height: inherit;
   width: inherit;
+
+  
 }
 
 .App {
@@ -11,4 +13,5 @@
   height: inherit;
   width: inherit;
   font-family: 'Poppins' , sans-serif;
+  /* background-color: black; */
 }

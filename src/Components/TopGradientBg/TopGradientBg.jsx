@@ -3,7 +3,7 @@ import style from "./topgradient.module.css";
 
 function TopGradient({zIndex}) {
     return (
-      <div className={style.container} style={{zIndex:zIndex}}>
+      <div className={style.container} style={{zIndex}}>
         <div className={style.circle} style={{ background: "#FFC93F" }}></div>
         <div className={style.circle} style={{ background: "#FF3FB2" }}></div>
         <div className={style.circle} style={{ background: "#0057FF" }}></div>

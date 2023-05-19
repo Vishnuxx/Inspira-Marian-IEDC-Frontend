@@ -13,14 +13,14 @@ function NavbarMobile() {
     <>
       <nav className={style.navigation}>
         <div className={style.logobar}>
-          <Logo></Logo>
+          <Logo style={{ width: "200px", display: "flex" }}></Logo>
         </div>
         <div onClick={() => setOpen(true)}>
           <HamburgerIcon></HamburgerIcon>
         </div>
       </nav>
       {isOpen && (
-        <MenuItemContainer state={[isOpen , setOpen]}></MenuItemContainer>
+        <MenuItemContainer state={[isOpen, setOpen]}></MenuItemContainer>
       )}
     </>
   );
@@ -32,20 +32,22 @@ export default NavbarMobile;
 
 function MenuItemContainer({state}) {
    const [isOpen, setOpen] = state
-    return<div className={style.navmenu_mobile}>
-          <TopGradient></TopGradient>
+    return (
+      <div className={style.navmenu_mobile}>
+        <TopGradient zIndex="-1"></TopGradient>
 
-          <div className={style.navmenulist_mobile}>
-            <p className={style.navmenuItem}>Home</p>
-            <p className={style.navmenuItem}>About</p>
-            <p className={style.navmenuItem}>News</p>
-            <p className={style.navmenuItem}>Events</p>
-            <p className={style.navmenuItem}>Learn</p>
-            <HighlightButton>Build a Startup</HighlightButton>
-          </div>
-
-          <div onClick={() => setOpen(false)}>
-            <CloseIcon></CloseIcon>
-          </div>
+        <div className={style.navmenulist_mobile}>
+          <p className={style.navmenuItem}>Home</p>
+          <p className={style.navmenuItem}>About</p>
+          <p className={style.navmenuItem}>News</p>
+          <p className={style.navmenuItem}>Events</p>
+          <p className={style.navmenuItem}>Learn</p>
+          <HighlightButton>Build a Startup</HighlightButton>
         </div>
+
+        <div onClick={() => setOpen(false)}>
+          <CloseIcon></CloseIcon>
+        </div>
+      </div>
+    );
 }
