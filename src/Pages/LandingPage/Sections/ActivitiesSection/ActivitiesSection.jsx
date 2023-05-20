@@ -13,7 +13,12 @@ function ActivitiesSection() {
         ></SubHeading>
 
         <div className={style.mediacontainer}>
-          
+          <NewsListItem title="hello newa 1"></NewsListItem>
+          <NewsListItem title="hello newa 1"></NewsListItem>
+          <NewsListItem title="hello newa 1"></NewsListItem>
+          <NewsListItem title="hello newa 1"></NewsListItem>
+          <NewsListItem title="hello newa 1"></NewsListItem>
+          <NewsListItem title="hello newa 1"></NewsListItem>
         </div>
       </section>
     );

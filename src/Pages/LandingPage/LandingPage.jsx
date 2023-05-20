@@ -46,6 +46,7 @@ function LandingPage() {
       </section>
 
       <ActivitiesSection></ActivitiesSection>
+      
     </main>
   );
 }
