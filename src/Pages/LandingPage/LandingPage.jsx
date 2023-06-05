@@ -7,6 +7,8 @@ import style from "./landingpage.module.css";
 
 import bottomillustration from "../../assets/imgs/bottomillus.png";
 import ActivitiesSection from "./Sections/ActivitiesSection/ActivitiesSection";
+import AboutSection from "./Sections/AboutSection/AboutSection";
+import TeamSection from "./Sections/Team/TeamSection";
 
 
 function LandingPage() {
@@ -46,7 +48,8 @@ function LandingPage() {
       </section>
 
       <ActivitiesSection></ActivitiesSection>
-      
+      <AboutSection></AboutSection>
+      <TeamSection></TeamSection>
     </main>
   );
 }

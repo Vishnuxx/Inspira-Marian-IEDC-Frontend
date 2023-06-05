@@ -75,15 +75,17 @@
 .logocontent {
   position: relative;
   animation-name: fadein;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 @keyframes fadein {
-  50% {
+  80% {
+    transform: scale(0.4);
     opacity: 0;
   }
   100% {
+     transform: scale(1);
     opacity: 1;
   }
 }
@@ -94,22 +96,30 @@
   margin: 0px;
   padding: 0;
   font-weight: 600;
-  animation-name: zoomOut;
-  animation-duration: 0.9s;
-  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  animation: scaledtranslate 2s cubic-bezier(0.19, 1, 0.22, 1) ;
+  /* animation-duration: 0.9s; */
+  /* animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
   white-space: nowrap;
 }
 
-@keyframes zoomOut {
+
+@keyframes scaledtranslate {
   0% {
-    transform: scale(10);
+    transform: scale(10) translate(100vw);
   }
-  30% {
+  30%{
+    transform: scale(10) translate(0vw);
+  }
+  60%{
+transform: scale(1) ;
   }
   100% {
-    transform: scale(1);
+    
   }
 }
+
+
+
 
 .subtitle {
   font-size: 2rem;
@@ -122,7 +132,7 @@
   top: -10px;
   margin-bottom: 10px;
   animation-name: contract;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   white-space: nowrap;
   overflow: scroll;
@@ -133,7 +143,7 @@
     opacity: 0;
   }
 
-  70% {
+  80% {
     opacity: 0;
     letter-spacing: 50px;
   }
@@ -147,19 +157,20 @@
   width: 60vw;
   margin-bottom: 40px;
   font-size: 22px;
-  animation-duration: 2s;
+  animation-duration: 1.7s;
   animation-name: fadein;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @keyframes fadein {
   0% {
-    opacity: 0;
+   opacity: 0;
   }
 
-  50% {
-    opacity: 0;
+  70% {
+ opacity: 0;
   }
+  
   100% {
     opacity: 1;
   }
@@ -169,7 +180,7 @@
   width: 500px;
   display: flex;
   justify-content: space-around;
-  animation-duration: 2.5s;
+  animation-duration: 2s;
   animation-name: fadein;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -187,10 +198,27 @@
   width: 50%;
   position: absolute;
   bottom: 0;
-  animation-duration: 1s;
-  animation-name: fadein;
+  animation-duration: 1.2s;
+  animation-name: elevate;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+@keyframes elevate {
+  0% {
+   opacity: 0;
+  }
+
+  70% {
+ opacity: 0;
+ transform:translateY(20px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform:translateY(0px);
+  }
+}
+
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {

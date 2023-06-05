@@ -1,0 +1,103 @@
+.aboutsection {
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+}
+
+.cardcontainer {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card {
+  min-height: 400px;
+  height: 40vh;
+  width: 30%;
+  min-width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px 0px rgb(205, 205, 205);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 10px;
+}
+
+.orangeBg {
+  background: rgb(255, 7, 7);
+  background: linear-gradient(
+    311deg,
+    rgba(255, 7, 7, 1) 0%,
+    rgba(255, 153, 0, 1) 100%
+  );
+}
+
+.blueBg {
+  background: rgb(158, 0, 255);
+  background: linear-gradient(
+    311deg,
+    rgba(158, 0, 255, 1) 0%,
+    rgba(0, 163, 255, 1) 100%
+  );
+}
+
+.greenBg {
+  background: rgb(27, 104, 255);
+  background: linear-gradient(
+    311deg,
+    rgba(27, 104, 255, 1) 0%,
+    rgba(0, 204, 167, 1) 100%
+  );
+}
+
+
+@media (max-width: 481px) {
+  .cardcontainer {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 720px) {
+  .cardcontainer {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1030px) {
+  .cardcontainer {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-height: 720px) and (max-width: 1030px) {
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}

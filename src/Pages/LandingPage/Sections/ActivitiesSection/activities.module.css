@@ -1,15 +1,15 @@
 .activitiessection {
-    padding: 30px;
+    padding: 5px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
 }
 
 .mediacontainer {
-    width: 100vw;
+    width: 100%;
     padding: 5px;
     height: fit-content;
     display: flex;
@@ -20,6 +20,7 @@
      overflow-y: scroll;
      -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
+    
 }
 
 .mediacontainer::-webkit-scrollbar { 
@@ -30,7 +31,7 @@
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .activitiessection {
-    padding: 30px;
+    /* padding: 30px; */
   }
 }
 
