@@ -10,9 +10,10 @@ function TeamSection() {
           description="Introducing the Core team of Inspira Marian IEDC 2023-24 Batch."
         ></SubHeading>
         <div className={style.teammembergrid}>
-          {TEAM_MEMBER_DETAILS.map(member=>{
+          {TEAM_MEMBER_DETAILS.map((member , i) => { 
             return (
               <TeamMember
+              key={i}
                 profileicon = {member.profileicon}
                 name={member.name}
                 designation={member.designation}

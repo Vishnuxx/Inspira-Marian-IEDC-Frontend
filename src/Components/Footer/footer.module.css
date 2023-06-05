@@ -1,0 +1,24 @@
+
+.footer {
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     color: white;
+   
+}
+
+.sitemapcontainer {
+    display: flex;
+    
+}
+
+.sitemapcontainer a {
+    margin: 5px;
+     color: white;
+}

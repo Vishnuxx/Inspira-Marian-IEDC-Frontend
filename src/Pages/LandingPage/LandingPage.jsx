@@ -9,6 +9,7 @@ import bottomillustration from "../../assets/imgs/bottomillus.png";
 import ActivitiesSection from "./Sections/ActivitiesSection/ActivitiesSection";
 import AboutSection from "./Sections/AboutSection/AboutSection";
 import TeamSection from "./Sections/Team/TeamSection";
+import Footer from "../../Components/Footer/Footer";
 
 
 function LandingPage() {
@@ -50,6 +51,7 @@ function LandingPage() {
       <ActivitiesSection></ActivitiesSection>
       <AboutSection></AboutSection>
       <TeamSection></TeamSection>
+      <Footer></Footer>
     </main>
   );
 }
