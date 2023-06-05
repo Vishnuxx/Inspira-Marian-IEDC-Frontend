@@ -1,5 +1,5 @@
 
-export const TeamMemberDetails = [
+export const TEAM_MEMBER_DETAILS = [
   {
     name: "Abhiram",
     designation: "CEO",

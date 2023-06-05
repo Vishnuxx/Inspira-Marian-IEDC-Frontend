@@ -27,7 +27,7 @@
 
 .title {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 10px;
 }
 
@@ -35,5 +35,16 @@
     font-size: 22px;
     font-weight:600;
     margin-top: 10px;
+    color: orangered;
 }
 
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;}
+
+    .designation {
+    font-size: 18px;}
+}

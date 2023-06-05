@@ -1,7 +1,7 @@
 import SubHeading from '../../../../Components/SubHeading/Subheading';
 import TeamMember from '../../../../Components/TeamMember/TeamMember';
 import style from './teamsection.module.css'
-
+import {TEAM_MEMBER_DETAILS} from '../../../../Constants/tramMemberDetails'
 function TeamSection() {
     return (
       <section className={style.teamsection}>
@@ -10,12 +10,17 @@ function TeamSection() {
           description="Introducing the Core team of Inspira Marian IEDC 2023-24 Batch."
         ></SubHeading>
         <div className={style.teammembergrid}>
-          <TeamMember name={"Vishnu"} designation={"CEO"}></TeamMember>
-          <TeamMember name={"Vishnu"} designation={"CEO"}></TeamMember>
-          <TeamMember name={"Vishnu"} designation={"CEO"}></TeamMember>
-          <TeamMember name={"Vishnu"} designation={"CEO"}></TeamMember>
-          <TeamMember name={"Vishnu"} designation={"CEO"}></TeamMember>
-          <TeamMember name={"Vishnu"} designation={"CEO"}></TeamMember>
+          {TEAM_MEMBER_DETAILS.map(member=>{
+            return (
+              <TeamMember
+                profileicon = {member.profileicon}
+                name={member.name}
+                designation={member.designation}
+              ></TeamMember>
+            );
+          })}
+          
+         
         </div>
       </section>
     );
