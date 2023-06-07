@@ -1,8 +1,17 @@
 
 export const TEAM_MEMBER_DETAILS = [
   {
+    name: "Dr.M_Manoj",
+    designation: "IEDC Nodal Officer Marian",
+    profileUrl: "M_manoj.png",
+    socials: {
+      linkedin: "",
+      portfolio: "",
+    },
+  },
+  {
     name: "Abhiram",
-    designation: "CEO",
+    designation: "IEDC Lead",
     profileUrl: "abhiram.jpg",
     socials: {
       linkedin: "",
@@ -11,7 +20,7 @@ export const TEAM_MEMBER_DETAILS = [
   },
   {
     name: "Joan Liz Geogy",
-    designation: "COO",
+    designation: "Quality and Operations Lead",
     profileUrl: "joanlizgeogy.jpg",
     socials: {
       linkedin: "",
@@ -20,7 +29,7 @@ export const TEAM_MEMBER_DETAILS = [
   },
   {
     name: "Vishnu VS",
-    designation: "CTO",
+    designation: "Tech Lead",
     profileUrl: "vishnuvs.jpg",
     socials: {
       linkedin: "",
@@ -29,7 +38,7 @@ export const TEAM_MEMBER_DETAILS = [
   },
   {
     name: "GOVIND SB",
-    designation: "Position",
+    designation: "Financial Lead",
     profileUrl: "govindsb.jpeg",
     socials: {
       linkedin: "",
@@ -47,7 +56,7 @@ export const TEAM_MEMBER_DETAILS = [
   // },
   {
     name: "Diya Hanil",
-    designation: "Position",
+    designation: "Social Media Executive",
     profileUrl: "diyahanil.jpg",
     socials: {
       linkedin: "",
