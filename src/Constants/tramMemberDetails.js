@@ -36,15 +36,15 @@ export const TEAM_MEMBER_DETAILS = [
       portfolio: "",
     },
   },
-  {
-    name: "Abhinav SB",
-    designation: "Position",
-    profileUrl: "",
-    socials: {
-      linkedin: "",
-      portfolio: "",
-    },
-  },
+  // {
+  //   name: "Abhinav SB",
+  //   designation: "Position",
+  //   profileUrl: "",
+  //   socials: {
+  //     linkedin: "",
+  //     portfolio: "",
+  //   },
+  // },
   {
     name: "Diya Hanil",
     designation: "Position",
