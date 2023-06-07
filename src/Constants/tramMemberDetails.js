@@ -3,7 +3,7 @@ export const TEAM_MEMBER_DETAILS = [
   {
     name: "Abhiram",
     designation: "CEO",
-    profileUrl: "",
+    profileUrl: "abhiram.jpg",
     socials: {
       linkedin: "",
       portfolio: "",
@@ -12,7 +12,7 @@ export const TEAM_MEMBER_DETAILS = [
   {
     name: "Joan Liz Geogy",
     designation: "COO",
-    profileUrl: "",
+    profileUrl: "joanlizgeogy.jpg",
     socials: {
       linkedin: "",
       portfolio: "",
@@ -21,7 +21,7 @@ export const TEAM_MEMBER_DETAILS = [
   {
     name: "Vishnu VS",
     designation: "CTO",
-    profileUrl: "",
+    profileUrl: "vishnuvs.jpg",
     socials: {
       linkedin: "",
       portfolio: "",
@@ -30,7 +30,7 @@ export const TEAM_MEMBER_DETAILS = [
   {
     name: "GOVIND SB",
     designation: "Position",
-    profileUrl: "",
+    profileUrl: "govindsb.jpeg",
     socials: {
       linkedin: "",
       portfolio: "",
@@ -48,7 +48,7 @@ export const TEAM_MEMBER_DETAILS = [
   {
     name: "Diya Hanil",
     designation: "Position",
-    profileUrl: "",
+    profileUrl: "diyahanil.jpg",
     socials: {
       linkedin: "",
       portfolio: "",

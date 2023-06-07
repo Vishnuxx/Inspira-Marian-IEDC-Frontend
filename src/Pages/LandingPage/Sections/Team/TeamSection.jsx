@@ -11,10 +11,13 @@ function TeamSection() {
         ></SubHeading>
         <div className={style.teammembergrid}>
           {TEAM_MEMBER_DETAILS.map((member , i) => { 
+            console.log(
+           `${process.env.PUBLIC_URL}/imgs/${member.name}`
+            );
             return (
               <TeamMember
-              key={i}
-                profileicon = {member.profileicon}
+                key={i}
+                profileicon={`${process.env.PUBLIC_URL}/imgs/${member.profileicon}`}
                 name={member.name}
                 designation={member.designation}
               ></TeamMember>

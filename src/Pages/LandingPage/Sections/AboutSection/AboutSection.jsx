@@ -15,12 +15,36 @@ function AboutSection() {
         <div className={style.cardcontainer}>
           <div className={`${style.card} ${style.greenBg}`}>
             <CommunityIcon></CommunityIcon>
+            <div style={{ height: "30px" }}></div>
+            <p>
+              We identify all
+              possible ways by which our students can achieve a successful
+              career. Even though a good number of students are recruited by
+              companies through campus recruitment, we also help to mould them
+              as job providers, not as job seekers.
+            </p>
           </div>
           <div className={`${style.card} ${style.blueBg}`}>
             <RadarIcon></RadarIcon>
+            <div style={{ height: "30px" }}></div>
+            <p>
+              Students are encouraged to think out of the syllabus to identify
+              problems, which can’t be solved, and to develop a product as
+              outcome of solution. They are given end to end support through
+              which they can file a patent and market the product.
+              
+            </p>
           </div>
           <div className={`${style.card} ${style.orangeBg}`}>
             <RocketIcon></RocketIcon>
+            <div style={{ height: "30px" }}></div>
+            <p>
+              Students
+              attend lot of technology seminars and hands on trainings, through
+              which they can improve their technical skill and sharpen their
+              thought process. The IEDC is affiliated to Kerala Startup Mission
+              at Technopark, Thiruvananthapuram.
+            </p>
           </div>
         </div>
       </section>

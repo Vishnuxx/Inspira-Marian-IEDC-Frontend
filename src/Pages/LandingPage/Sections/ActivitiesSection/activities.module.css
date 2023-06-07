@@ -27,6 +27,21 @@
     display: none;  /* Safari and Chrome */
 }
 
+.morebuttoncontainer {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 40px;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-style: none;
+}
+.morebuttoncontainer a { 
+  width: fit-content;
+}
+
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {

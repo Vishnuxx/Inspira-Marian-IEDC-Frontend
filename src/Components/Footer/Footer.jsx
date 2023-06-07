@@ -6,7 +6,7 @@ function Footer() {
       <div className={style.footer}>
         <Logo style={{ width: "fit-content" }} textColor="white"></Logo>
         <div className={style.sitemapcontainer}>
-          <a href="/home">Home</a>
+          <a href="/">Home</a>
           <a href="/About">About</a>
           <a href="/News">News</a>
           <a href="/Events">Events</a>
