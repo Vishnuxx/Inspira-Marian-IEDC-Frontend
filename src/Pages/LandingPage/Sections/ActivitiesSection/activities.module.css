@@ -16,7 +16,7 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-     margin: 50px 0;
+     margin: 10px 0;
      overflow-y: scroll;
      -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
@@ -40,40 +40,25 @@
 }
 .morebuttoncontainer a { 
   width: fit-content;
+  font-style: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: blue;
+  margin: 30px 0;
 }
 
 
-/* Media Query for Mobile Devices */
-@media (max-width: 480px) {
-  .activitiessection {
-    /* padding: 30px; */
-  }
-}
 
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .activitiessection {
     padding: 10px;
   }
-}
 
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-   
+  .morebuttoncontainer a {
+    font-size: 20px;
   }
 }
 
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  body {
-    
-  }
-}
 
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
-  body {
-    
-  }
-}
+
