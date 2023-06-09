@@ -10,6 +10,7 @@ import ActivitiesSection from "./Sections/ActivitiesSection/ActivitiesSection";
 import AboutSection from "./Sections/AboutSection/AboutSection";
 import TeamSection from "./Sections/Team/TeamSection";
 import Footer from "../../Components/Footer/Footer";
+import CommunityPartnersSection from "./Sections/CommunityPartners/CommunityPartnerSection";
 
 
 function LandingPage() {
@@ -47,7 +48,7 @@ function LandingPage() {
         </div>
         <img className={style.bottomillus} src={bottomillustration} alt="" />
       </section>
-
+<CommunityPartnersSection></CommunityPartnersSection>
       <ActivitiesSection></ActivitiesSection>
       <AboutSection></AboutSection>
       <TeamSection></TeamSection>
