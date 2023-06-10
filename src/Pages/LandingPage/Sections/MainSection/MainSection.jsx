@@ -25,6 +25,7 @@ function MainSection() {
                 height: "120px",
                 position: "relative",
                 top: "30px",
+                
               }}
             ></Logo>
           </div>

@@ -17,9 +17,10 @@
 
 ul {
   margin: 0;
-  padding: 0;
+  padding: 0px 0;
   list-style: none;
   overflow: hidden;
+  z-index: 2;
 }
 
 ul li a {

@@ -11,7 +11,7 @@ function Navbar() {
   console.log(isOpen);
   return (
     <header className={style.header}>
-      <a href="" className={style.logo}>
+      <a href="/" className={style.logo}>
         <Logo style={{ display: "flex" }}></Logo>
       </a>
       <input className={style.menu_btn} type="checkbox" id="menu-btn" />

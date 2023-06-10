@@ -56,20 +56,30 @@ function AboutPage() {
               link
             );
             return (
-              <img
-                width={"100%"}
-                height={"100%"}
-                loading="lazy"
-                key={i}
-                src={
-                  REACT_APP_SERVER_URL +
-                  "/static/posters/execom/2023-24/" +
-                  link
-                }
-                alt="execomposter"
-              />
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  color: "black",
+                }}
+              >
+                <img
+                  width={"100%"}
+                  height={"100%"}
+                  loading="lazy"
+                  key={i}
+                  className={style.img}
+                  src={
+                    REACT_APP_SERVER_URL +
+                    "/static/posters/execom/2023-24/" +
+                    link
+                  }
+                  alt="execomposter"
+                />
+              </div>
             );
           })}
+        
         </div>
       </section>
       <div>

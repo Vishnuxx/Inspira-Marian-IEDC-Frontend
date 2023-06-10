@@ -12,7 +12,7 @@ function PoralPage() {
         <div>
           <SubHeading2 title={"Build a Startup"}></SubHeading2>
           <p className={style.description}> portal</p>
-          <form action="none">
+          <div action="none">
             <Input
               title={"Mail Id"}
               description={"Use your college email id only"}
@@ -36,27 +36,12 @@ function PoralPage() {
             ></TextInput>
 
             <Button>Submit</Button>
-          </form>
+          </div>
         </div>
       </section>
     </main>
   );
-  // return (
-  //   <iframe
-  //   title="inspira-portal"
-  //     src="https://docs.google.com/forms/d/e/1FAIpQLSfl15wYbvEBtlR2oyL5O8eJCQ-pG4Mfg211PR3jgzHR2RvYbQ/viewform?embedded=true"
-  //     style={{
 
-  //     }}
-  //     width="500px"
-  //     height="80%"
-  //     frameborder="0"
-  //     marginheight="0"
-  //     marginwidth="0"
-  //   >
-  //     Loading…
-  //   </iframe>
-  // );
 }
 
 export default PoralPage;
