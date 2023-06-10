@@ -4,6 +4,7 @@
   border: none;
   min-width: 200px;
   color: white;
+   font-weight: 700;
   background : linear-gradient(311deg, rgba(255,7,7,1) 0%, rgba(255,153,0,1) 100%);
 }
 
@@ -12,5 +13,5 @@
 }
 
 .highlightbutton:hover {
-    font-weight: 700;
+    background : linear-gradient(311deg, rgba(255,153,0,1)   0%, rgba(255,7,7,1) 100%);
 }

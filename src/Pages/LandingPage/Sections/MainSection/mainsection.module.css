@@ -10,6 +10,7 @@
   position: relative;
 }
 
+
 .bulbBgL {
   height: 50vh;
   width: 50vh;
@@ -32,6 +33,10 @@
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
+
+
+
+
 
 @keyframes translatefromleft {
   0% {
