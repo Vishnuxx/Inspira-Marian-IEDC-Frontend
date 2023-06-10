@@ -1,17 +1,13 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+ 
+  width: 100vw;
   z-index: 3;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
   box-sizing: border-box;
-  animation-duration: 2s;
-  animation-name: fadein;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ 
 }
 
 .sidebuttons {
@@ -167,15 +163,3 @@ li a:hover {
   }
 }
 
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}

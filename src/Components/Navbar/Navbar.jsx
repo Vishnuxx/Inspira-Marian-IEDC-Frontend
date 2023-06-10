@@ -6,7 +6,7 @@ import { HamburgerIcon } from "../../Icons/HamburgerIcon";
 import useNavBar from "../../hooks/useNavbar";
 import { CloseIcon } from "../../Icons/CloseIcon";
 
-function NavbarDesktop() {
+function Navbar() {
   const [isOpen, setOpen] = useNavBar();
   console.log(isOpen);
   return (
@@ -20,20 +20,20 @@ function NavbarDesktop() {
       </label>
       <ul className={style.menu}>
         <li>
-          <a href="#work">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="/about">About</a>
         </li>
         <li>
-          <a href="#careers">Events</a>
+          <a href="/events">Events</a>
         </li>
         <li>
-          <a href="#contact">Media</a>
+          <a href="/media">Media</a>
         </li>
 
         <li>
-          <a href="#contact">Learn</a>
+          <a href="/learn">Learn</a>
         </li>
       </ul>
       <div className={style.sidebuttons}>
@@ -43,4 +43,4 @@ function NavbarDesktop() {
   );
 }
 
-export default NavbarDesktop;
+export default Navbar;

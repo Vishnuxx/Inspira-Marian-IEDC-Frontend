@@ -10,7 +10,10 @@ function MainSection() {
     <>
       <section className={style.landingpage}>
         <TopGradient></TopGradient>
-        <Navbar></Navbar>
+        <div className={style.navbar}>
+          <Navbar></Navbar>
+        </div>
+
         <BulbGradient className={style.bulbBgL}></BulbGradient>
         <BulbGradient className={style.bulbBgR}></BulbGradient>
         <div className={style.maincontent}>
