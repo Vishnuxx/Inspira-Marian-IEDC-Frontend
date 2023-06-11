@@ -5,9 +5,12 @@ import style from "./navbar.module.css";
 import { HamburgerIcon } from "../../Icons/HamburgerIcon";
 import useNavBar from "../../hooks/useNavbar";
 import { CloseIcon } from "../../Icons/CloseIcon";
+import { useNavigate } from "react-router";
+import { ROUTES } from "../../Constants/RouterPaths";
 
 function Navbar() {
   const [isOpen, setOpen] = useNavBar();
+  const navigate = useNavigate()
   console.log(isOpen);
   return (
     <header className={style.header}>
@@ -25,19 +28,19 @@ function Navbar() {
         <li>
           <a href="/about">About</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/events">Events</a>
-        </li>
+        </li> */}
         <li>
           <a href="/media">Media</a>
         </li>
 
-        <li>
+        {/* <li>
           <a href="/learn">Learn</a>
-        </li>
+        </li> */}
       </ul>
       <div className={style.sidebuttons}>
-        <HighlightButton>Build a Startup</HighlightButton>
+        <HighlightButton onClick={()=>navigate(ROUTES.PORTAL_PAGE)}>Build a Startup</HighlightButton>
       </div>
     </header>
   );

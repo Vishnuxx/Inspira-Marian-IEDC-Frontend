@@ -5,7 +5,10 @@ import BulbGradient from "../../../../Icons/BulbGradient";
 import style from "./mainsection.module.css";
 import bottomillustration from "../../../../assets/imgs/bottomillus.png"
 import Navbar from "../../../../Components/Navbar/Navbar"
+import { useNavigate } from "react-router";
+import { ROUTES } from "../../../../Constants/RouterPaths";
 function MainSection() {
+  const navigate = useNavigate();
   return (
     <>
       <section className={style.landingpage}>
@@ -25,7 +28,6 @@ function MainSection() {
                 height: "120px",
                 position: "relative",
                 top: "30px",
-                
               }}
             ></Logo>
           </div>
@@ -39,7 +41,9 @@ function MainSection() {
           </p>
           <div className={style.actionbuttoncontainer}>
             <button className={style.explorebtn}>Explore</button>
-            <HighlightButton>Build a Startup</HighlightButton>
+            <HighlightButton onClick={() => navigate(ROUTES.PORTAL_PAGE)}>
+              Build a Startup
+            </HighlightButton>
           </div>
         </div>
         <img className={style.bottomillus} src={bottomillustration} alt="" />

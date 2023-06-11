@@ -57,6 +57,7 @@ function AboutPage() {
             );
             return (
               <div
+                key={i}
                 style={{
                   width: "100%",
                   height: "100%",
@@ -67,7 +68,6 @@ function AboutPage() {
                   width={"100%"}
                   height={"100%"}
                   loading="lazy"
-                  key={i}
                   className={style.img}
                   src={
                     REACT_APP_SERVER_URL +
