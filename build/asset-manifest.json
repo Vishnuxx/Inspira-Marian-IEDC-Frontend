@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "./static/css/main.1ab80d93.css",
+    "main.js": "./static/js/main.52a321c4.js",
+    "static/js/787.7d9ab8c6.chunk.js": "./static/js/787.7d9ab8c6.chunk.js",
+    "static/media/M Manoj.webp": "./static/media/M Manoj.29404b212c1ae551203b.webp",
+    "static/media/Dr. Vishnu.webp": "./static/media/Dr. Vishnu.83ce0ac1836d5451fd45.webp",
+    "static/media/Abhinavsb.webp": "./static/media/Abhinavsb.e5c8ddb8bd10257c218c.webp",
+    "static/media/Diyahanil.webp": "./static/media/Diyahanil.408cdab0bbec14c939b5.webp",
+    "static/media/Vishnu.webp": "./static/media/Vishnu.96eaa81c924679d38da1.webp",
+    "static/media/Ashwin.webp": "./static/media/Ashwin.e6b54009b80bff8c5adb.webp",
+    "static/media/Manoj.webp": "./static/media/Manoj.f5eecd0694dd8c8a14cd.webp",
+    "static/media/Joan.webp": "./static/media/Joan.f5bd5ff16d6dc19cdcea.webp",
+    "static/media/Vishnuvs.webp": "./static/media/Vishnuvs.54f9f51c7288aa7c5c6c.webp",
+    "static/media/Abhiram.webp": "./static/media/Abhiram.814aae1fc2336233d31b.webp",
+    "static/media/Govind.webp": "./static/media/Govind.68993df43cb85c6ec33a.webp",
+    "static/media/Gayathri.webp": "./static/media/Gayathri.6bac815d3e3315869c02.webp",
+    "static/media/Abhinavpkumar.webp": "./static/media/Abhinavpkumar.c1ab391148d47852307f.webp",
+    "static/media/bottomillus.png": "./static/media/bottomillus.1b4db69eff9a9615770a.png",
+    "static/media/abhiram.webp": "./static/media/abhiram.d6132609a45dffa598b2.webp",
+    "static/media/abhinavsb.webp": "./static/media/abhinavsb.b020d764b2974f4566df.webp",
+    "static/media/ashwin.webp": "./static/media/ashwin.c1994060716f4f312a55.webp",
+    "static/media/joan.webp": "./static/media/joan.4c4166aebe3aac753a46.webp",
+    "static/media/gayathri.webp": "./static/media/gayathri.884250411be8852ba88c.webp",
+    "static/media/diya.webp": "./static/media/diya.71e8e909a87f96062946.webp",
+    "static/media/abhinavpk.webp": "./static/media/abhinavpk.b7460d93a5a931daf1d3.webp",
+    "static/media/govind.webp": "./static/media/govind.cecd7b1615aa8223bde2.webp",
+    "static/media/vishnu.webp": "./static/media/vishnu.301254c8c8babe637b9d.webp",
+    "index.html": "./index.html",
+    "main.1ab80d93.css.map": "./static/css/main.1ab80d93.css.map",
+    "main.52a321c4.js.map": "./static/js/main.52a321c4.js.map",
+    "787.7d9ab8c6.chunk.js.map": "./static/js/787.7d9ab8c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ab80d93.css",
+    "static/js/main.52a321c4.js"
+  ]
+}
