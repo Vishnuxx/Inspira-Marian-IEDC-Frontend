@@ -1,14 +1,28 @@
+import { Link } from "react-scroll";
+
 import HighlightButton from "../../../../Components/Highlightbutton/HighlightButton";
 import Logo from "../../../../Components/Logo/Logo";
 import TopGradient from "../../../../Components/TopGradientBg/TopGradientBg";
 import BulbGradient from "../../../../Icons/BulbGradient";
 import style from "./mainsection.module.css";
-import bottomillustration from "../../../../assets/imgs/bottomillus.png"
-import Navbar from "../../../../Components/Navbar/Navbar"
+import bottomillustration from "../../../../assets/imgs/bottomillus.png";
+import Navbar from "../../../../Components/Navbar/Navbar";
 import { useNavigate } from "react-router";
 import { ROUTES } from "../../../../Constants/RouterPaths";
 function MainSection() {
   const navigate = useNavigate();
+
+  const handleClick = () => {
+    // Scroll to a specific section with smooth behavior
+    // Replace "sectionId" with the actual ID of the target section
+    // Adjust the duration and offset values as needed
+    const scrollOptions = {
+      duration: 500,
+      offset: -50,
+      smooth: true,
+    };
+    Link.scrollTo("sectionId", scrollOptions);
+  };
   return (
     <>
       <section className={style.landingpage}>
@@ -40,7 +54,15 @@ function MainSection() {
             free you from the shackles you have grounded yourself in.
           </p>
           <div className={style.actionbuttoncontainer}>
-            <button className={style.explorebtn}>Explore</button>
+            {/* <button className={style.explorebtn} onClick={()=> {
+              window.scrollTo({top:0 , behavior:"smooth"})
+              console.log("sds")
+              }}>
+             
+                Explore
+            
+            </button> */}
+
             <HighlightButton onClick={() => navigate(ROUTES.PORTAL_PAGE)}>
               Build a Startup
             </HighlightButton>

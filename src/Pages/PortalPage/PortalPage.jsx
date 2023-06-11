@@ -4,9 +4,15 @@ import { Input, TextInput } from "../../Components/FormInput/FormInput";
 import SubHeading2 from "../../Components/SubHeading2/Subheading2";
 import TopGradient from "../../Components/TopGradientBg/TopGradientBg";
 import style from "./portalpage.module.css";
-import { getValidatedFormData } from "../../services/PortalFormService";
+import {
+  getValidatedFormData,
+  submitPortalData,
+} from "../../services/PortalFormService";
+import { useNavigate } from "react-router";
+import { ROUTES } from "../../Constants/RouterPaths";
 
 function PoralPage() {
+  const navigate = useNavigate()
   const [error, setError] = useState("");
   const [formState, setFormState] = useState({
     name: "",
@@ -30,7 +36,7 @@ function PoralPage() {
     event.preventDefault();
     try {
       setError("");
-      const val = getValidatedFormData({
+      const data = getValidatedFormData({
         email: formState.email,
         username: formState.name,
         phonenumber: formState.number,
@@ -39,7 +45,20 @@ function PoralPage() {
         targetcustomers: formState.targetaudience,
         currentskills: formState.skills,
       });
-      console.log(val);
+      // console.log(val);
+
+      submitPortalData(
+        data,
+        (response) => {
+          console.log(response);
+          navigate(ROUTES.IDEA_SUBMISSION_SUCCESS_PAGE , {
+            replace: true
+          })
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
     } catch (error) {
       setError(error.toString());
     }

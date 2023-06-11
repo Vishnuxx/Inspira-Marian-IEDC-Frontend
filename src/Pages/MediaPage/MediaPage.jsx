@@ -1,24 +1,33 @@
+import { useEffect, useState } from "react";
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
 import SubHeading2 from "../../Components/SubHeading2/Subheading2";
 import TopGradient from "../../Components/TopGradientBg/TopGradientBg";
 import { REACT_APP_SERVER_URL } from "../../Constants/envs";
 import style from "./mediapage.module.css"
+import { getMedia } from "../../services/APIServices";
+
+
+const data = [
+  { title: "", url: "" },
+  { title: "", url: "" },
+  { title: "", url: "" },
+  { title: "", url: "" },
+  { title: "", url: "" },
+  { title: "", url: "" },
+  { title: "", url: "" },
+];
 
 function MediaPage() {
-    const posters = [
-      "iedclead.webp",
-      "operationslead.webp",
-      "techlead.webp",
-      "welead.webp",
-      "communitylead.webp",
-      "creativelead.webp",
-      "financelead.webp",
+     const [posts, setposts] = useState(data);
 
-      "marketinglead.webp",
-
-      "portallead.webp",
-    ];
+     useEffect( () => {
+       (async function()  {
+        const medias = await getMedia();
+        setposts(medias);
+       })()
+       
+     }, []);
     return (
       <main>
         <TopGradient zIndex={-1}></TopGradient>
@@ -40,22 +49,14 @@ function MediaPage() {
           </div>
 
           <div className={style.grid}>
-            {posters.map((link, i) => {
-              console.log(
-                REACT_APP_SERVER_URL,
-                "/public/posters/execom/2023-24/",
-                link
-              );
+            {posts.map((data, i) => {
+              console.log(data.url)
               return (
                 <Post
                   key={i}
-                  img={
-                    REACT_APP_SERVER_URL +
-                    "/static/posters/execom/2023-24/" +
-                    link
-                  }
-                  title={link}
-                  description="sdkbsd"
+                  img={data.url}
+                  title={""}
+                  description=""
                 ></Post>
                 // <img
                 //   width={"100%"}

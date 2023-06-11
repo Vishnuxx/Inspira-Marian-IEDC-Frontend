@@ -1,18 +1,9 @@
 
 export const TEAM_MEMBER_DETAILS = [
   {
-    name: "Dr.M_Manoj",
-    designation: "IEDC Nodal Officer Marian",
-    profileUrl: "M_manoj.png",
-    socials: {
-      linkedin: "",
-      portfolio: "",
-    },
-  },
-  {
     name: "Abhiram",
     designation: "IEDC Lead",
-    profileUrl: "abhiram.jpg",
+    profileUrl: "Abhiram.webp",
     socials: {
       linkedin: "",
       portfolio: "",
@@ -21,7 +12,7 @@ export const TEAM_MEMBER_DETAILS = [
   {
     name: "Joan Liz Geogy",
     designation: "Quality and Operations Lead",
-    profileUrl: "joanlizgeogy.jpg",
+    profileUrl: "Joan.webp",
     socials: {
       linkedin: "",
       portfolio: "",
@@ -30,7 +21,7 @@ export const TEAM_MEMBER_DETAILS = [
   {
     name: "Vishnu VS",
     designation: "Tech Lead",
-    profileUrl: "vishnuvs.jpg",
+    profileUrl: "Vishnuvs.webp",
     socials: {
       linkedin: "",
       portfolio: "",
@@ -39,25 +30,75 @@ export const TEAM_MEMBER_DETAILS = [
   {
     name: "GOVIND SB",
     designation: "Financial Lead",
-    profileUrl: "govindsb.jpeg",
+    profileUrl: "Govind.webp",
     socials: {
       linkedin: "",
       portfolio: "",
     },
   },
-  // {
-  //   name: "Abhinav SB",
-  //   designation: "Position",
-  //   profileUrl: "",
-  //   socials: {
-  //     linkedin: "",
-  //     portfolio: "",
-  //   },
-  // },
+  {
+    name: "ABHINAV SB",
+    designation: "Community Lead",
+    profileUrl: "Abhinavsb.webp",
+    socials: {
+      linkedin: "",
+      portfolio: "",
+    },
+  },
+  {
+    name: "ASHWIN A MURALI",
+    designation: "Marketing Lead",
+    profileUrl: "Ashwin.webp",
+    socials: {
+      linkedin: "",
+      portfolio: "",
+    },
+  },
+  {
+    name: "GAYATHRI",
+    designation: "Financial Lead",
+    profileUrl: "Gayathri.webp",
+    socials: {
+      linkedin: "",
+      portfolio: "",
+    },
+  },
+  {
+    name: "ABHINAV P KUMAR",
+    designation: "Creative Lead",
+    profileUrl: "Abhinavpkumar.webp",
+    socials: {
+      linkedin: "",
+      portfolio: "",
+    },
+  },
+
   {
     name: "Diya Hanil",
     designation: "Social Media Executive",
-    profileUrl: "diyahanil.jpg",
+    profileUrl: "Diyahanil.webp",
+    socials: {
+      linkedin: "",
+      portfolio: "",
+    },
+  },
+];
+
+
+export const NODAL_OFFICER_DETAILS = [
+  {
+    name: "Dr.M Manoj",
+    designation: "Nodal Officer at Marian IEDC",
+    profileUrl: "M Manoj.webp",
+    socials: {
+      linkedin: "",
+      portfolio: "",
+    },
+  },
+  {
+    name: "Dr.Vishnu B R",
+    designation: "Nodal Officer at Marian IEDC",
+    profileUrl: "Dr. Vishnu.webp",
     socials: {
       linkedin: "",
       portfolio: "",

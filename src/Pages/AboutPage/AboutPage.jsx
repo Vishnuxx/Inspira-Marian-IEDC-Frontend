@@ -9,17 +9,15 @@ import style from "./aboutpage.module.css";
 
 function AboutPage() {
   const posters = [
-    "iedclead.webp",
-    "operationslead.webp",
-    "techlead.webp",
-    "welead.webp",
-    "communitylead.webp",
-    "creativelead.webp",
-    "financelead.webp",
-
-    "marketinglead.webp",
-
-    "portallead.webp",
+    "abhiram.webp",
+    "joan.webp",
+    "vishnu.webp",
+    "gayathri.webp",
+    "govind.webp",
+    "ashwin.webp",
+    "abhinavpk.webp",
+    "abhinavsb.webp",
+    "diya.webp",
   ];
   return (
     <main className={style.main}>
@@ -50,11 +48,7 @@ function AboutPage() {
 
         <div className={style.grid}>
           {posters.map((link, i) => {
-            console.log(
-              REACT_APP_SERVER_URL,
-              "/public/posters/execom/2023-24/",
-              link
-            );
+            console.log(link)
             return (
               <div
                 key={i}
@@ -69,11 +63,7 @@ function AboutPage() {
                   height={"100%"}
                   loading="lazy"
                   className={style.img}
-                  src={
-                    REACT_APP_SERVER_URL +
-                    "/static/posters/execom/2023-24/" +
-                    link
-                  }
+                  src={require("../../assets/execomposters/" + link)}
                   alt="execomposter"
                 />
               </div>

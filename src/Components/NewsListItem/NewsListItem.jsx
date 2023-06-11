@@ -3,7 +3,7 @@ import style from "./newslistitem.module.css"
 function NewsListItem({thumbnail , title , description}) {
     return (
       <div className={style.container}>
-        <img src={thumbnail} alt="" className={style.thumbnail} />
+        <img src={thumbnail} loading="lazy" alt="" className={style.thumbnail} />
         <div className={style.titlecontainer}>
           <h5 className={style.title}>
             {title}

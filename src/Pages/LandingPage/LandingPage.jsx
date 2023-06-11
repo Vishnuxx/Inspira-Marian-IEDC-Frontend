@@ -10,7 +10,7 @@ function LandingPage() {
   return (
     <main>
       <MainSection></MainSection>
-      <CommunityPartnersSection></CommunityPartnersSection>
+      {/* <CommunityPartnersSection></CommunityPartnersSection> */}
       <ActivitiesSection></ActivitiesSection>
       <AboutSection></AboutSection>
       <TeamSection></TeamSection>

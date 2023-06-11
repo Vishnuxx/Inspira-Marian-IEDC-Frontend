@@ -1,7 +1,7 @@
 import style from "./teammember.module.css";
 
 function TeamMember({ profileicon, name, designation }) {
-  console.log("../assets/imgs/" + profileicon);
+  
   return (
     <div className={style.container}>
       <div className={style.avatar}>
