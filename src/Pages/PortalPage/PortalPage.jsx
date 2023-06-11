@@ -22,6 +22,7 @@ function PoralPage() {
     solution: "",
     targetaudience: "",
     skills: "",
+    classdetails:""
   });
 
   const handleInputChange = (event, name) => {
@@ -44,6 +45,7 @@ function PoralPage() {
         solution: formState.solution,
         targetcustomers: formState.targetaudience,
         currentskills: formState.skills,
+        classdetails: formState.classdetails,
       });
       // console.log(val);
 
@@ -79,10 +81,19 @@ function PoralPage() {
               onChange={(e) => handleInputChange(e, "email")}
             ></Input>
             <Input
-              title={"Username *"}
-              description={"Use your college email id only"}
+              title={"Name *"}
+              description={"Enter your name"}
               placeholder={""}
               onChange={(e) => handleInputChange(e, "name")}
+              type="email"
+            ></Input>
+            <Input
+              title={"Class & Department *"}
+              description={
+                "Enter your Class and Depatrment including current semester"
+              }
+              placeholder={"eg: S6R2 CSE"}
+              onChange={(e) => handleInputChange(e, "classdetails")}
               type="email"
             ></Input>
             <Input
@@ -115,7 +126,10 @@ function PoralPage() {
             ></TextInput>
             <TextInput
               title={"Your current Skills (max 500 words)"}
-              description={"this is sa descripton"}
+              description={
+                "Mention your current skills that would help to build your startup.(Leave it blank if No)"
+              }
+              placeholder={"eg: programming , communication ... "}
               onChange={(e) => handleInputChange(e, "skills")}
             ></TextInput>
             <p

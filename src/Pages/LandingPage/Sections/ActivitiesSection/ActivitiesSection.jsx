@@ -19,8 +19,13 @@ function ActivitiesSection() {
 
   useEffect(() => {
     (async function () {
-      const medias = await getMedia(6);
-      setposts(medias);
+      try {
+        const res = await getMedia(6);
+        if (res.status === 200) setposts(res.data);
+      } catch (error) {
+        console.error(error)
+      }
+      
     })();
   }, []);
 

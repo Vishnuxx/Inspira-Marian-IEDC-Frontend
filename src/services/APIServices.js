@@ -23,5 +23,5 @@ export const getMedia = async (limit) => {
       },
     });
 
-    return res.data
+    return res
 }

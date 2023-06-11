@@ -23,7 +23,7 @@ function IdeaSubmissionSuccessPage() {
           subTitle=""
           style={{ justifyContent: "center", alignItems: "center" }}
           extra={[
-            <Link to={"/"}>
+            <Link key={"i"} to={"/"}>
               <Button>Home</Button>
             </Link>,
           ]}

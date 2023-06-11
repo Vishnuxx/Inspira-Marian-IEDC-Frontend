@@ -23,8 +23,12 @@ function MediaPage() {
 
      useEffect( () => {
        (async function()  {
-        const medias = await getMedia();
-        setposts(medias);
+        try {
+          const res = await getMedia();
+          if (res.status === 200) setposts(res.data);
+        } catch (error) {
+          console.error(error);
+        }
        })()
        
      }, []);

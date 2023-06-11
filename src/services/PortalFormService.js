@@ -16,6 +16,7 @@ export function getValidatedFormData({
   solution,
   targetcustomers,
   currentskills,
+  classdetails,
 }) {
   validateMarianEmail(email);
   validateUsername(username);
@@ -24,6 +25,7 @@ export function getValidatedFormData({
   validateSolution(solution, 500);
   validateWordCount(targetcustomers, 100);
   validateWordCount(currentskills, 500);
+  validateWordCount(classdetails , 30);
 
   return {
     email: email,
@@ -33,6 +35,7 @@ export function getValidatedFormData({
     solution: solution,
     targetcustomers: targetcustomers,
     currentskills: currentskills,
+    classdetails: classdetails,
   };
 }
 
@@ -45,6 +48,7 @@ export const submitPortalData = async (data , onSuccess , onError) => {
     solution,
     targetcustomers,
     currentskills,
+    classdetails,
   } = data;
 
   axios({
@@ -59,12 +63,15 @@ export const submitPortalData = async (data , onSuccess , onError) => {
       solution: solution,
       targetaudience: targetcustomers,
       skills: currentskills,
+      classdetails: classdetails,
     },
-  }).then(response => {
-     onSuccess(response);
-  }).catch(error => {
-     onError(error);
   })
+    .then((response) => {
+      onSuccess(response);
+    })
+    .catch((error) => {
+      onError(error);
+    });
 
 };
 
