@@ -7,6 +7,7 @@ import useNavBar from "../../hooks/useNavbar";
 import { CloseIcon } from "../../Icons/CloseIcon";
 import { useNavigate } from "react-router";
 import { ROUTES } from "../../Constants/RouterPaths";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setOpen] = useNavBar();
@@ -14,25 +15,28 @@ function Navbar() {
   console.log(isOpen);
   return (
     <header className={style.header}>
-      <a href="/" className={style.logo}>
-        <Logo style={{ display: "flex" }}></Logo>
-      </a>
+      <Link to={"/"}>
+        <div className={style.logo}>
+          <Logo style={{ display: "flex" }}></Logo>
+        </div>
+      </Link>
+
       <input className={style.menu_btn} type="checkbox" id="menu-btn" />
       <label className={style.menu_icon} htmlFor="menu-btn">
         <span className={style.navicon}></span>
       </label>
       <ul className={style.menu}>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link to={ROUTES.ABOUT_PAGE}>About</Link>
         </li>
         {/* <li>
-          <a href="/events">Events</a>
+          <Link to="/events">Events</Link>
         </li> */}
         <li>
-          <a href="/media">Media</a>
+          <Link to={ROUTES.MEDIA_PAGE}>Media</Link>
         </li>
 
         {/* <li>
@@ -40,7 +44,9 @@ function Navbar() {
         </li> */}
       </ul>
       <div className={style.sidebuttons}>
-        <HighlightButton onClick={()=>navigate(ROUTES.PORTAL_PAGE)}>Build a Startup</HighlightButton>
+        <HighlightButton onClick={() => navigate(ROUTES.PORTAL_PAGE)}>
+          Build a Startup
+        </HighlightButton>
       </div>
     </header>
   );

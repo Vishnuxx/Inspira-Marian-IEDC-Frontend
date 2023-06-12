@@ -3,6 +3,8 @@ import NewsListItem from "../../../../Components/NewsListItem/NewsListItem";
 import SubHeading from "../../../../Components/SubHeading/Subheading";
 import style from "./activities.module.css";
 import { getMedia } from "../../../../services/APIServices";
+import { Link } from "react-router-dom";
+import { ROUTES } from "../../../../Constants/RouterPaths";
 
 const data = [
   { title: "", url: "" },
@@ -15,13 +17,15 @@ const data = [
 ];
 
 function ActivitiesSection() {
+  
   const [posts, setposts] = useState(data);
 
   useEffect(() => {
     (async function () {
       try {
         const res = await getMedia(6);
-        if (res.status === 200) setposts(res.data);
+    
+        setposts(res.data);
       } catch (error) {
         console.error(error)
       }
@@ -39,7 +43,7 @@ function ActivitiesSection() {
       ></SubHeading>
 
       <div className={style.morebuttoncontainer}>
-        <a href="/media">More</a>
+        <Link to={ROUTES.MEDIA_PAGE}>More</Link>
       </div>
       <div className={style.mediacontainer}>
         {posts.map((data, i) => {
