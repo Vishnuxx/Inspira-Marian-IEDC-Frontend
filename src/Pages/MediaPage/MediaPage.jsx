@@ -54,7 +54,7 @@ function MediaPage() {
 
           <div className={style.grid}>
             {posts.map((data, i) => {
-              console.log(data.url)
+             
               return (
                 <Post
                   key={i}
