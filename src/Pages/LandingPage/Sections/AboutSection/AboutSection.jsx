@@ -19,8 +19,7 @@ function AboutSection() {
             <p>
               We promote an innovation driven entrepreneurship culture among the
               students. We identify all possible ways by which our students can
-              achieve a successful career. We also help to mould them as job
-              providers, not as job seekers.
+              achieve a successful career.
             </p>
           </div>
           <div className={`${style.card} ${style.blueBg}`}>
@@ -29,8 +28,7 @@ function AboutSection() {
             <p>
               Students are encouraged to think out of the syllabus to identify
               problems, which can’t be solved, and to develop a product as
-              outcome of solution. They are given end to end support through
-              which they can file a patent and market the product.
+              outcome of solution. 
             </p>
           </div>
           <div className={`${style.card} ${style.orangeBg}`}>
@@ -38,10 +36,9 @@ function AboutSection() {
             <div style={{ height: "30px" }}></div>
             <p>
               The purpose of the IEDCs will be to act as an aspirational
-              platform, for the l student entrepreneurs and tech savvy
+              platform,for the student entrepreneurs and tech savvy
               innovators, in skilling and sharpening their entrepreneurial skill
-              sets. We develop and promote commercially viable innovative
-              product and solution from the students.
+              sets.
             </p>
           </div>
         </div>
