@@ -42,13 +42,7 @@ function MediaPage() {
               <SubHeading2 title="News and Media"></SubHeading2>
             </div>
             <p>
-              Marian Engineering College always focuses its activities to solve
-              unemployment problems that exist in society. We identify all
-              possible ways by which our students can achieve a successful
-              career.IEDC works as the first launch pad for a student’s
-              entrepreneurial journey and provide them with access to cutting
-              edge technology, world class infrastructure, high quality
-              men-torship, early risk capital and global exposure.
+             Glance over the events that happens here!
             </p>
           </div>
 

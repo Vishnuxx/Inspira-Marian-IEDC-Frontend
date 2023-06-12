@@ -29,7 +29,7 @@ export const TEAM_MEMBER_DETAILS = [
   },
   {
     name: "GOVIND SB",
-    designation: "Financial Lead",
+    designation: "Finance Lead",
     profileUrl: "Govind.webp",
     socials: {
       linkedin: "",
@@ -56,7 +56,7 @@ export const TEAM_MEMBER_DETAILS = [
   },
   {
     name: "GAYATHRI",
-    designation: "Financial Lead",
+    designation: "Women Entrepreneurship Lead",
     profileUrl: "Gayathri.webp",
     socials: {
       linkedin: "",
@@ -97,7 +97,7 @@ export const NODAL_OFFICER_DETAILS = [
   },
   {
     name: "Dr.Vishnu B R",
-    designation: "Nodal Officer at Marian IEDC",
+    designation: "Asst. Nodal Officer at Marian IEDC",
     profileUrl: "Dr. Vishnu.webp",
     socials: {
       linkedin: "",

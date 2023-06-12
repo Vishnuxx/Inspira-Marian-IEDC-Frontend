@@ -31,13 +31,16 @@ function AboutPage() {
           </div>
 
           <p>
-            Marian Engineering College always focuses its activities to solve
-            unemployment problems that exist in society. We identify all
-            possible ways by which our students can achieve a successful
-            career.IEDC works as the first launch pad for a student’s
-            entrepreneurial journey and provide them with access to cutting edge
-            technology, world class infrastructure, high quality men-torship,
-            early risk capital and global exposure.
+            IEDC works as the first launch pad for a student’s entrepreneurial
+            journey and provide them with access to cutting edge technology,
+            world class infrastructure, high quality men-torship, early risk
+            capital and global exposure.To support the budding Entrepreneurs
+            through Grants and to create an entrepreneurship flavour in the
+            academic fraternity.The selected innovators will be exposed to
+            Innovation culture, emerging technologies and Business aspects with
+            the implicit assumption that the delta will become an entrepreneur
+            and all the other skilled talents will get high end jobs with the
+            kind of exposure and skills they acquire.
           </p>
 
           <div className={style.subheading}>
@@ -48,7 +51,7 @@ function AboutPage() {
 
         <div className={style.grid}>
           {posters.map((link, i) => {
-            console.log(link)
+            console.log(link);
             return (
               <div
                 key={i}
@@ -69,7 +72,6 @@ function AboutPage() {
               </div>
             );
           })}
-        
         </div>
       </section>
       <div>

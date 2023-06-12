@@ -6,6 +6,7 @@
   box-sizing: border-box;
   overflow-y: scroll;
 }
+
 .section {
   padding: 30px;
   display: flex;
@@ -47,6 +48,7 @@
 
 @media (max-width: 73em) {
   .section {
-    padding: 30px;
+    padding: 0 30px 30px 30px;
   }
+
 }

@@ -9,7 +9,7 @@ function AboutSection() {
       <section className={style.aboutsection}>
         <SubHeading
           title="Know More About Inspira"
-          description="Curious to know more about Inspira? Wanna explore what all wonders we can do as a team? Come, witness it by yourself!"
+          // description="Curious to know more about Inspira? Wanna explore what all wonders we can do as a team? Come, witness it by yourself!"
         ></SubHeading>
 
         <div className={style.cardcontainer}>
@@ -17,11 +17,10 @@ function AboutSection() {
             <CommunityIcon></CommunityIcon>
             <div style={{ height: "30px" }}></div>
             <p>
-              We identify all
-              possible ways by which our students can achieve a successful
-              career. Even though a good number of students are recruited by
-              companies through campus recruitment, we also help to mould them
-              as job providers, not as job seekers.
+              We promote an innovation driven entrepreneurship culture among the
+              students. We identify all possible ways by which our students can
+              achieve a successful career. We also help to mould them as job
+              providers, not as job seekers.
             </p>
           </div>
           <div className={`${style.card} ${style.blueBg}`}>
@@ -32,18 +31,17 @@ function AboutSection() {
               problems, which can’t be solved, and to develop a product as
               outcome of solution. They are given end to end support through
               which they can file a patent and market the product.
-              
             </p>
           </div>
           <div className={`${style.card} ${style.orangeBg}`}>
             <RocketIcon></RocketIcon>
             <div style={{ height: "30px" }}></div>
             <p>
-              Students
-              attend lot of technology seminars and hands on trainings, through
-              which they can improve their technical skill and sharpen their
-              thought process. The IEDC is affiliated to Kerala Startup Mission
-              at Technopark, Thiruvananthapuram.
+              The purpose of the IEDCs will be to act as an aspirational
+              platform, for the l student entrepreneurs and tech savvy
+              innovators, in skilling and sharpening their entrepreneurial skill
+              sets. We develop and promote commercially viable innovative
+              product and solution from the students.
             </p>
           </div>
         </div>

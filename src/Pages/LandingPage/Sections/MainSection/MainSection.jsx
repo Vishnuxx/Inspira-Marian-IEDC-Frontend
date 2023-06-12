@@ -49,9 +49,10 @@ function MainSection() {
           <h1 className={style.heading}>Inspira</h1>
           <p className={style.subtitle}>MARIAN IEDC</p>
           <p className={style.description}>
-            Reach to your Destiny through Innovation And we Are Here For You. We
-            are here to assist you in breaking through the echo chambers and
-            free you from the shackles you have grounded yourself in.
+            Reach to your Destiny through Innovation And we Are Here For
+            You. Fostering an Innovation Culture , Empowering Innovators with
+            State-of-the-Art Technologies and Building a Platform for Learning
+            and Entrepreneurship
           </p>
           <div className={style.actionbuttoncontainer}>
             {/* <button className={style.explorebtn} onClick={()=> {
